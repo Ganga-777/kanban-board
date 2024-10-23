@@ -1,0 +1,19 @@
+.board {
+  padding: 20px;
+}
+
+.columns {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .board {
+    padding: 10px;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+}

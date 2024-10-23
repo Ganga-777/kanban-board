@@ -1,0 +1,52 @@
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-id {
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+.user-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+}
+
+.card-tag {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #6b6b6b;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.tag-icon {
+  font-size: 8px;
+  margin-right: 4px;
+}

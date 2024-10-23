@@ -1,0 +1,136 @@
+.column {
+  min-width: 280px;
+  background-color: #f4f5f7;
+  border-radius: 8px;
+  width: 300px;
+  padding: 12px;
+  margin-right: 16px;
+}
+
+@media (max-width: 768px) {
+  .column {
+    min-width: auto;
+    margin-right: 0;
+  }
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #f4f5f7;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.column-icon {
+  margin-right: 8px;
+}
+
+.column-title-group {
+  display: flex;
+  align-items: center;
+}
+
+.status-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.status-icon-todo {
+  background-color: #e6e6e6;
+  border: 2px solid #c4c4c4;
+}
+
+.status-icon-in-progress {
+  background-color: #f1c950;
+  border: 2px solid #e8af0c;
+}
+
+.status-icon-done {
+  background-color: #5e6ad2;
+}
+
+.status-icon-canceled {
+  background-color: #e6e6e6;
+  position: relative;
+}
+
+.status-icon-canceled::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 2px;
+  background-color: #6b6b6b;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.status-icon-canceled::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 2px;
+  background-color: #6b6b6b;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.column-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  margin-right: 8px;
+}
+
+.ticket-count {
+  font-size: 14px;
+  color: #6b6b6b;
+  background-color: #e6e7e9;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.column-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.add-ticket,
+.more-options {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: 8px;
+}
+
+.add-ticket svg,
+.more-options svg {
+  width: 16px;
+  height: 16px;
+  fill: #6b6b6b;
+}
+
+.column-content {
+  min-height: 100px;
+}
+
+.column-tickets {
+  display: flex;
+  flex-direction: column;
+}
+
+.column.collapsed {
+  min-height: 60px;
+}
+
+.collapse-icon {
+  margin-left: auto;
+  font-size: 12px;
+}
